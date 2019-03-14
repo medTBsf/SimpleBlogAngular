@@ -1,0 +1,11 @@
+<div class="title-date">
+  <h2>{{ post.title }}</h2>
+  <span>{{ post.created_at | date: "short" }}</span>
+</div>
+<p>
+  {{ post.content }}
+</p>
+<button class="btn btn-success btn-sm mr-2" (click)="loveIt()">Love it</button>
+<button class="btn btn-danger btn-sm" (click)="dontLoveIt()">
+  Don't love it
+</button>
